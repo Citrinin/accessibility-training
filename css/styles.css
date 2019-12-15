@@ -67,7 +67,7 @@
   font-size: 8rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  color: #209cee;
+  color: #0d75ba;
 }
 
 .is-shady {
@@ -177,4 +177,52 @@ li {
 
 *:focus {
   box-shadow: inset 0 0 0 2px black, 0 0 3px 2px hotpink !important;
+}
+
+.button.is-info {
+  background-color: #0d75ba;
+}
+
+.subtitle.is-5 {
+  color: #303030;
+}
+
+.hero.is-info {
+  background-color: #0d75ba;
+}
+
+.hero.is-info .tabs.is-boxed li.is-active a {
+  color: #0d75ba;
+}
+
+.tag:not(body).is-danger {
+  background-color: #eb002f;
+}
+
+.tag:not(body).is-primary {
+  background-color: #00806c;
+}
+
+.tag:not(body).is-success {
+  background-color: #157a38;
+}
+
+.has-text-grey-light {
+  color: #757575 !important;
+}
+
+.help.is-success {
+  color: #17873e;
+}
+
+.help.is-danger {
+  color: #eb002f;
+}
+
+a {
+  color: #2e70dc;
+}
+
+.hero.is-info .subtitle {
+  color: #ffffff;
 }
