@@ -1,6 +1,6 @@
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../img/accessibility-hero-banner.jpg') no-repeat center center fixed;
+    url("../img/accessibility-hero-banner.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -113,6 +113,7 @@
   height: 3rem;
   line-height: 2.8;
   margin-bottom: 1rem;
+  width: 100%;
 }
 .post {
   margin: 1rem;
@@ -164,7 +165,7 @@ li {
 }
 
 .ol-list li::before {
-  content: '';
+  content: "";
   background: url(../img/arrow_sans_right-512.png) no-repeat;
   display: inline-block;
   text-align: center;
@@ -253,7 +254,7 @@ a {
   color: #4a4a4a;
   display: flex;
   justify-content: center;
-  margin-bottom: -6px;
+  margin-bottom: -4px;
   padding: 0.5em 1em;
   vertical-align: top;
 }
@@ -263,4 +264,10 @@ a {
   border-radius: 4px 4px 0 0;
   background-color: #0d75ba;
   color: #fff;
+}
+
+button.tag {
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
