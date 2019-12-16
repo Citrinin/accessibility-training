@@ -228,12 +228,22 @@ a {
   color: #ffffff;
 }
 
-.visually-hidden {
+.visually-hidden,
+.skip-link {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.skip-link:focus {
+  clip: auto;
+  width: auto;
+  height: auto;
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
 }
 
 .navbar-menu a {
