@@ -12,7 +12,51 @@
 
   <body>
     <section class="hero hero-bg is-fullheight">
-      <a href="#main" class="skip-link">Skip navigation link</a>
+      <!-- <a href="#main" class="skip-link">Skip navigation link</a> -->
+      <div class="dropdown">
+          <div class="dropdown-trigger">
+            <button class="button skip-link" aria-haspopup="true" aria-controls="dropdown-menu3">
+              <span>Skip navigation link</span>
+              <span class="icon is-small">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+            <div class="dropdown-content">
+              <a href="#navbarMenu" class="dropdown-item">
+                Navigation
+              </a>
+              <a href="#about" class="dropdown-item">
+                  About Us
+              </a>
+              <a href="#key-features" class="dropdown-item">
+                  Three key features
+              </a>
+              <a href="#topics" class="dropdown-item">
+                  List of topics
+              </a>
+              <a href="#events" class="dropdown-item">
+                  Upcoming events
+              </a>
+              <a href="#servcies" class="dropdown-item">
+                Services
+              </a>
+              <a href="#photos" class="dropdown-item">
+                  Photos from past events
+              </a>
+              <a href="#forum" class="dropdown-item">
+                  Forum
+              </a>
+              <a href="#contacts" class="dropdown-item">
+                  Contact us
+              </a>
+              <a href="#contacts" class="dropdown-item">
+                  Footer
+              </a>
+            </div>
+          </div>
+        </div>
       <div class="breadcrumb-section">
         <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
           <ul>
@@ -247,7 +291,7 @@
         </div>
       </section>
 
-      <section class="hero has-background-grey-light">
+      <section class="hero has-background-grey-light" id="key-features">
         <div class="container features">
           <div class="section-heading has-text-centered">
             <h2 class="title is-2">Three key features</h2>
@@ -489,7 +533,7 @@
         </div>
       </section>
 
-      <section class="section has-background-grey-lighter">
+      <section class="section has-background-grey-lighter" id="events">
         <div class="container has-text-centered">
           <div class="section-heading has-text-centered">
             <h2 class="title is-2">Upcoming events</h2>
@@ -565,7 +609,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="services">
         <div class="section-heading has-text-centered">
           <h2 class="title is-2">Services</h2>
           <div class="subtitle is-5">What can I do for you?</div>
@@ -613,7 +657,7 @@
         </div>
       </section>
 
-      <section class="section has-background-grey-lighter">
+      <section class="section has-background-grey-lighter" id="photos">
         <div class="container">
           <div class="section-heading has-text-centered">
             <h2 class="title is-2">Photos from past events</h2>
@@ -951,7 +995,7 @@
         </div>
       </section>
 
-      <section class="section has-background-light">
+      <section class="section has-background-light" id="contacts">
         <div class="container">
           <div class="section-heading has-text-centered">
             <h2 class="title is-2">Contact us</h2>
@@ -1160,7 +1204,7 @@
     </div>
   </div> -->
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <h2 class="visually-hidden">Footer</h2>
       <div class="container">
         <div class="columns">
