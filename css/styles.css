@@ -1,6 +1,6 @@
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/accessibility-hero-banner.jpg") no-repeat center center fixed;
+    url('../img/accessibility-hero-banner.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -164,7 +164,7 @@ li {
 }
 
 .ol-list li::before {
-  content: "";
+  content: '';
   background: url(../img/arrow_sans_right-512.png) no-repeat;
   display: inline-block;
   text-align: center;
@@ -225,4 +225,42 @@ a {
 
 .hero.is-info .subtitle {
   color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.navbar-menu a {
+  text-decoration: underline !important;
+}
+
+.tabs.is-boxed .is-active button {
+  background-color: #fff;
+  border-color: #fff;
+  color: #0d75ba;
+}
+
+.tabs button {
+  align-items: center;
+  border-bottom-color: #dbdbdb;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  color: #4a4a4a;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -6px;
+  padding: 0.5em 1em;
+  vertical-align: top;
+}
+
+.tabs.is-boxed button {
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  background-color: #0d75ba;
+  color: #fff;
 }

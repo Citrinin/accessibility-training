@@ -16,7 +16,7 @@
       <div class="navbar">
         <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item logo-link">
+            <a class="navbar-item logo-link " href="#">
               <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" alt="epam logo">
             </a>
             <span class="navbar-burger burger" data-target="navbarMenu">
@@ -29,7 +29,7 @@
           <nav id="navbarMenu" class="navbar-menu">
             <ul class="navbar-end">
               <li class="navbar-item">
-                <a class="button is-white is-outlined">
+                <a class="has-text-white" href="#">
                   <span class="icon">
                     <i class="fa fa-home"></i>
                   </span>
@@ -37,7 +37,7 @@
                 </a>
               </li>
               <li class="navbar-item">
-                <a class="button is-white is-outlined">
+                <a class="has-text-white" href="#">
                   <span class="icon">
                     <i class="fab fa-superpowers"></i>
                   </span>
@@ -45,7 +45,7 @@
                 </a>
               </li>
               <li class="navbar-item">
-                <a class="button is-white is-outlined">
+                <a class="has-text-white" href="#">
                   <span class="icon">
                     <i class="fa fa-book"></i>
                   </span>
@@ -53,7 +53,7 @@
                 </a>
               </li>
               <li class="navbar-item">
-                <a class="button is-white is-outlined">
+                <a class="has-text-white" href="#">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
@@ -105,7 +105,7 @@
 
       <div class="content container">
         <h3 class="is-1 title">Hello World</h3>
-        <p>Lorem ipsum<sup><a>[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
+        <p>Lorem ipsum<sup><a href="#">[1]<span class="visually-hidden">click to see reference 1</span></a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
         <h3 class="is-2 title">Second level</h3>
         <p>Curabitur accumsan turpis pharetra <b>augue tincidunt</b> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
         <ul>
@@ -115,7 +115,7 @@
           <li>- Ut non enim metus.</li>
         </ul>
         <h3 class="is-3 title">Third level</h3>
-        <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a>non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
+        <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#">non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
         <ol class="ol-list">
           <li>Donec blandit a lorem id convallis.</li>
           <li>Cras gravida arcu at diam gravida gravida.</li>
@@ -213,7 +213,7 @@
                 <div class="content">
                   <div>Tristique senectus et netus et.</div>
                   <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-                  <p><a>Learn more</a></p>
+                  <p><a target="_blank" href="https://www.w3.org/Translations/WCAG20-ru/">Learn more <span class="visually-hidden">&nbsp; Will open in a new tab</span> </a></p>
                 </div>
               </div>
             </div>
@@ -229,8 +229,8 @@
                   <div>Tempor orci dapibus ultrices in.</div>
                   <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
                     sed risus.</p>
-                  <p><a>Learn more</a></p>
-                </div>
+                    <p><a target="_blank" href="https://www.w3.org/Translations/WCAG20-ru/">Learn more <span class="visually-hidden">&nbsp; Will open in a new tab</span> </a></p>
+                  </div>
               </div>
             </div>
           </div>
@@ -244,7 +244,7 @@
                 <div class="content">
                   <div> Leo integer malesuada nunc vel risus. </div>
                   <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                  <p><a>Learn more</a></p>
+                  <p><a target="_blank" href="https://www.w3.org/Translations/WCAG20-ru/">Learn more <span class="visually-hidden">&nbsp; Will open in a new tab</span> </a></p>
                 </div>
               </div>
             </div>
@@ -264,16 +264,16 @@
         <div class="tabs is-boxed is-centered main-menu" id="nav">
           <ul>
             <li data-target="pane-1" id="1" class="is-active">
-              <a>
+              <button>
                 <span class="icon is-small"><i class="fa fa-image"></i></span>
                 <span>Pictures</span>
-              </a>
+              </button>
             </li>
             <li data-target="pane-3" id="3">
-              <a>
+              <button>
                 <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
                 <span>Team</span>
-              </a>
+              </button>
             </li>
             <li data-target="pane-4" id="4">
               <a>
