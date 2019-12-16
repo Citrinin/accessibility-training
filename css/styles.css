@@ -291,3 +291,11 @@ a[target="_blank"]::after {
   font-weight: 900;
   margin-left: 5px;
 }
+
+.breadcrumb-section {
+  background-color: #fff;
+}
+
+fieldset {
+  border: none;
+}
