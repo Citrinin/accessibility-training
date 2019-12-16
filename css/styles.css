@@ -271,3 +271,13 @@ button.tag {
   border-radius: 5px;
   font-weight: bold;
 }
+
+a[target="_blank"]::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f35d";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  margin-left: 5px;
+}
