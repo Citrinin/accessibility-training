@@ -1,6 +1,6 @@
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/accessibility-hero-banner.jpg") no-repeat center center fixed;
+    url('../img/accessibility-hero-banner.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -144,8 +144,9 @@
   width: 100%;
 }
 
-li {
-  list-style: none;
+ul,
+ol {
+  overflow: hidden;
 }
 
 .hero.is-fullheight {
@@ -158,14 +159,14 @@ li {
   padding: 1.25em 1.5em;
 }
 
-.ol-list li {
+.ol-list li span {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.ol-list li::before {
-  content: "";
+.ol-list li span::before {
+  content: '';
   background: url(../img/arrow_sans_right-512.png) no-repeat;
   display: inline-block;
   text-align: center;
@@ -282,9 +283,9 @@ button.tag {
   font-weight: bold;
 }
 
-a[target="_blank"]::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f35d";
+a[target='_blank']::after {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f35d';
   display: inline-block;
   padding-right: 3px;
   vertical-align: middle;
