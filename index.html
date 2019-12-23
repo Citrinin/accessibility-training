@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Web Accessibility 2019 Q1 BY</title>
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'>
-    <link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.10/css/all.css'>
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link rel="stylesheet prefetch" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
     <link rel="stylesheet prefetch" href="css/styles.css">
   </head>
 
@@ -39,7 +39,7 @@
               <a href="#events" class="dropdown-item">
                   Upcoming events
               </a>
-              <a href="#servcies" class="dropdown-item">
+              <a href="#services" class="dropdown-item">
                 Services
               </a>
               <a href="#photos" class="dropdown-item">
@@ -109,7 +109,7 @@
                 </li>
                 <li class="navbar-item">
                   <a class="has-text-white" href="#">
-                    <span class="icon">
+                    <span class="icon" aria-hidden="true">
                       <i class="fab fa-superpowers"></i>
                     </span>
                     <span>Examples</span>
@@ -117,7 +117,7 @@
                 </li>
                 <li class="navbar-item">
                   <a class="has-text-white" href="#">
-                    <span class="icon">
+                    <span class="icon" aria-hidden="true">
                       <i class="fa fa-book"></i>
                     </span>
                     <span>Documentation</span>
@@ -125,7 +125,7 @@
                 </li>
                 <li class="navbar-item">
                   <a class="has-text-white" href="#">
-                    <span class="icon">
+                    <span class="icon" aria-hidden="true">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>View Source</span>
@@ -147,8 +147,7 @@
             <form class="box">
               <div class="field is-grouped">
                 <p class="control is-expanded">
-                  <label for="email-notify" class="visually-hidden">Enter email for notification</label>
-                  <input id="email-notify" class="input">
+                  <input id="email-notify" class="input" aria-label="Enter email for notification">
                 </p>
                 <p class="control">
                   <button class="button is-info" type="submit">Notify Me</button>
@@ -177,7 +176,7 @@
 
         <div class="content container">
           <h3 class="is-1 title">Hello World</h3>
-          <p>Lorem ipsum<sup><a href="#">[1]<span class="visually-hidden">click to see reference 1</span></a></sup>
+          <p>Lorem ipsum<sup><a href="#" aria-label="click to see reference 1">[1]</a></sup>
             dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc
             varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel
             erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
@@ -310,11 +309,11 @@
                     <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer
                       enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper
                       viverra nam.</p>
-                    <p><a target="_blank" href="https://www.w3.org/Translations/WCAG20-ru/">Learn more <span
-                          class="visually-hidden">&nbsp; Will open in a new tab</span> </a></p>
-                  </div>
-                </div>
-              </div>
+                    <p><a id="tree-key-features-link-1" target="_blank" href="https://www.w3.org/Translations/WCAG20-ru/"
+                        aria-labelledby="tree-key-features-link-1 link-new-tab">Learn more</a></p>
+                    </div>
+                    </div>
+                    </div>
             </div>
 
             <div class="column is-4">
@@ -329,8 +328,7 @@
                       non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu
                       songue. Phasellus vestibulum lorem
                       sed risus.</p>
-                    <p><a target="_blank" href="https://www.w3.org/Translations/WCAG20-ru/">Learn more <span
-                          class="visually-hidden">&nbsp; Will open in a new tab</span> </a></p>
+                    <p><a id="tree-key-features-link-2" target="_blank" href="https://www.w3.org/Translations/WCAG20-ca/" aria-labelledby="tree-key-features-link-2 link-new-tab">Learn more</a></p>
                   </div>
                 </div>
               </div>
@@ -347,8 +345,7 @@
                     <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque
                       dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan
                       lacus vel facilisis.</p>
-                    <p><a target="_blank" href="https://www.w3.org/Translations/WCAG20-ru/">Learn more <span
-                          class="visually-hidden">&nbsp; Will open in a new tab</span> </a></p>
+                    <p><a id="tree-key-features-link-3" target="_blank" href="https://www.w3.org/Translations/WCAG20-fr/" aria-labelledby="tree-key-features-link-3 link-new-tab">Learn more</a></p>
                   </div>
                 </div>
               </div>
@@ -369,19 +366,19 @@
             <ul>
               <li data-target="pane-1" id="1" class="is-active">
                 <button>
-                  <span class="icon is-small"><i class="fa fa-image"></i></span>
+                  <span class="icon is-small" aria-hidden="true"><i class="fa fa-image"></i></span>
                   <span>Pictures</span>
                 </button>
               </li>
               <li data-target="pane-3" id="3">
                 <button>
-                  <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+                  <span class="icon is-small" aria-hidden="true"><i class="fab fa-superpowers"></i></span>
                   <span>Team</span>
                 </button>
               </li>
               <li data-target="pane-4" id="4">
                 <button>
-                  <span class="icon is-small"><i class="fa fa-film"></i></span>
+                  <span class="icon is-small" aria-hidden="true"><i class="fa fa-film"></i></span>
                   <span>Video</span>
                   </but>
               </li>
@@ -662,7 +659,7 @@
           <div class="section-heading has-text-centered">
             <h2 class="title is-2">Photos from past events</h2>
           </div>
-
+          <span class="visually-hidden" aria-hidden="true" id="photos-version">photos version:</span>
           <div class="container portfolio-container">
             <div class="columns">
               <div class="column is-4">
@@ -671,8 +668,8 @@
                     <p class="card-header-title">
                       <span>Admin <small>(Light)</small></span>
                       <span class="is-pulled-right">
-                        <button class="tag">
-                          <span class="is-default"><span class="visually-hidden">photos version:</span>v0.7.2</span>
+                        <button class="tag" id="photos-1" aria-labelledby="photos-version photos-1">
+                          <span class="is-default">v0.7.2</span>
                         </button>
                         <span class="tag is-default">Desktop</span>
                         <span class="tag is-danger">WIP</span>
@@ -686,8 +683,7 @@
                   </div>
                   <div class="card-footer">
                     <a class="card-footer-item" href="#">Preview</a>
-                    <a class="card-footer-item" href="#" target="_blank">Source Code<span class="visually-hidden">&nbsp;
-                        Will open in a new tab</span></a>
+                    <a class="card-footer-item" href="#" id="photo-source-code-1" target="_blank" aria-labelledby="photo-source-code-1 link-new-tab">Source Code</a>
                   </div>
                 </div>
               </div>
@@ -697,8 +693,8 @@
                     <p class="card-header-title">
                       <span>Cards</span>
                       <span class="is-pulled-right">
-                        <button class="tag">
-                          <span class="is-default"><span class="visually-hidden">photos version:</span>v0.7.2</span>
+                        <button class="tag" id="photos-2" aria-labelledby="photos-version photos-2">
+                          <span class="is-default">v0.7.2</span>
                         </button>
                         <span class="tag is-default">Desktop</span>
                         <span class="tag is-default">?</span>
@@ -712,8 +708,7 @@
                   </div>
                   <div class="card-footer">
                     <a class="card-footer-item" href="#">Preview</a>
-                    <a class="card-footer-item" href="#" target="_blank">Source Code<span class="visually-hidden">&nbsp;
-                        Will open in a new tab</span></a>
+                    <a class="card-footer-item" href="#" id="photo-source-code-2" target="_blank" aria-labelledby="photo-source-code-2 link-new-tab">Source Code</a>
                   </div>
                 </div>
               </div>
@@ -723,8 +718,8 @@
                     <p class="card-header-title">
                       <span>Forum</span>
                       <span class="is-pulled-right">
-                        <button class="tag">
-                          <span class="is-default"><span class="visually-hidden">photos version:</span>v0.7.2</span>
+                        <button class="tag" id="photos-3" aria-labelledby="photos-version photos-3">
+                          <span class="is-default">v0.7.2</span>
                         </button>
                         <span class="tag is-default">Desktop</span>
                         <span class="tag is-default">Mobile</span>
@@ -738,8 +733,7 @@
                   </div>
                   <div class="card-footer">
                     <a class="card-footer-item" href="#">Preview</a>
-                    <a class="card-footer-item" href="#" target="_blank">Source Code<span class="visually-hidden">&nbsp;
-                        Will open in a new tab</span></a>
+                    <a class="card-footer-item" href="#" id="photo-source-code-3" target="_blank" aria-labelledby="photo-source-code-3 link-new-tab">Source Code</a>
                   </div>
                 </div>
               </div>
@@ -751,8 +745,8 @@
                     <p class="card-header-title">
                       <span>InstaAlbum</span>
                       <span class="is-pulled-right">
-                        <button class="tag">
-                          <span class="is-default"><span class="visually-hidden">photos version:</span>v0.7.2</span>
+                        <button class="tag" id="photos-4" aria-labelledby="photos-version photos-4">
+                          <span class="is-default">v0.7.2</span>
                         </button>
                         <span class="tag is-default">Desktop</span>
                         <span class="tag is-default">Mobile</span>
@@ -766,8 +760,7 @@
                   </div>
                   <div class="card-footer">
                     <a class="card-footer-item" href="#">Preview</a>
-                    <a class="card-footer-item" href="#" target="_blank">Source Code<span class="visually-hidden">&nbsp;
-                        Will open in a new tab</span></a>
+                    <a class="card-footer-item" href="#" id="photo-source-code-4" target="_blank" aria-labelledby="photo-source-code-4 link-new-tab">Source Code</a>
                   </div>
                 </div>
               </div>
@@ -777,8 +770,8 @@
                     <p class="card-header-title">
                       <span>Landing</span>
                       <span class="is-pulled-right">
-                        <button class="tag">
-                          <span class="is-default"><span class="visually-hidden">photos version:</span>v0.7.2</span>
+                        <button class="tag" id="photos-5" aria-labelledby="photos-version photos-5">
+                          <span class="is-default">v0.7.2</span>
                         </button>
                         <span class="tag is-default">Desktop</span>
                         <span class="tag is-default">Mobile</span>
@@ -792,8 +785,7 @@
                   </div>
                   <div class="card-footer">
                     <a class="card-footer-item" href="#">Preview</a>
-                    <a class="card-footer-item" href="#" target="_blank">Source Code<span class="visually-hidden">&nbsp;
-                        Will open in a new tab</span></a>
+                    <a class="card-footer-item" href="#" id="photo-source-code-5" target="_blank" aria-labelledby="photo-source-code-5 link-new-tab">Source Code</a>
                   </div>
                 </div>
               </div>
@@ -803,8 +795,8 @@
                     <p class="card-header-title">
                       <span>Marketing</span>
                       <span class="is-pulled-right">
-                        <button class="tag">
-                          <span class="is-default"><span class="visually-hidden">photos version:</span>v0.7.2</span>
+                        <button class="tag" id="photos-6" aria-labelledby="photos-version photos-6">
+                          <span class="is-default">v0.7.2</span>
                         </button>
                         <span class="tag is-default">Desktop</span>
                         <span class="tag is-default">Mobile</span>
@@ -818,8 +810,7 @@
                   </div>
                   <div class="card-footer">
                     <a class="card-footer-item" href="#">Preview</a>
-                    <a class="card-footer-item" href="#" target="_blank">Source Code<span class="visually-hidden">&nbsp;
-                        Will open in a new tab</span></a>
+                    <a class="card-footer-item" href="#" id="photo-source-code-6" target="_blank" aria-labelledby="photo-source-code-6 link-new-tab">Source Code</a>
                   </div>
                 </div>
               </div>
@@ -834,7 +825,7 @@
             <h2 class="title is-2">Forum</h2>
             <div class="subtitle is-5">Discuss any topic with no leaving this page</div>
           </div>
-
+          <span class="visually-hidden" aria-hidden="true" id="user-profile">user profile</span>
           <div class="columns">
             <div class="column is-3">
               <button class="button is-primary is-block is-alt is-large">New Post</button>
@@ -863,7 +854,7 @@
                     <div class="media-content">
                       <div class="content">
                         <p>
-                          <a href="#">@jsmith<span class="visually-hidden">&nbsp; user profile</span></a> replied 34
+                          <a href="#" id="user-profile-1" aria-labelledby="user-profile user-profile-1">@jsmith</a> replied 34
                           minutes ago &nbsp;
                           <span class="tag">Question</span>
                         </p>
@@ -886,7 +877,7 @@
                     <div class="media-content">
                       <div class="content">
                         <p>
-                          <a href="#">@red<span class="visually-hidden">&nbsp; user profile</span></a> replied 40
+                          <a href="#" id="user-profile-2" aria-labelledby="user-profile user-profile-2">@red</a> replied 40
                           minutes ago &nbsp;
                           <span class="tag">Question</span>
                         </p>
@@ -903,13 +894,13 @@
                   <div class="media">
                     <div class="media-left">
                       <p class="image is-32x32">
-                        <img src="https://source.unsplash.com/random/64x64/?sig=302" alt="jsmith profile photo">
+                        <img src="https://source.unsplash.com/random/64x64/?sig=302" alt="another jsmith profile photo">
                       </p>
                     </div>
                     <div class="media-content">
                       <div class="content">
                         <p>
-                          <a href="#">@jsmith<span class="visually-hidden">&nbsp; user profile</span></a> replied 53
+                          <a href="#" id="user-profile-3" aria-labelledby="user-profile user-profile-3">@jsmith</a> replied 53
                           minutes ago &nbsp;
                           <span class="tag">Question</span>
                         </p>
@@ -932,7 +923,7 @@
                     <div class="media-content">
                       <div class="content">
                         <p>
-                          <a href="#">@brown<span class="visually-hidden">&nbsp; user profile</span></a> replied 3 hours
+                          <a href="#" id="user-profile-4" aria-labelledby="user-profile user-profile-4">@brown</a> replied 3 hours
                           ago &nbsp;
                           <span class="tag">Question</span>
                         </p>
@@ -955,7 +946,7 @@
                     <div class="media-content">
                       <div class="content">
                         <p>
-                          <a href="#">@hamburgler<span class="visually-hidden">&nbsp; user profile</span></a> replied 5
+                          <a href="#" id="user-profile-5" aria-labelledby="user-profile user-profile-5">@hamburgler</a> replied 5
                           hours ago &nbsp;
                           <span class="tag">Question</span>
                         </p>
@@ -978,7 +969,7 @@
                     <div class="media-content">
                       <div class="content">
                         <p>
-                          <a href="#">@rapper <span class="visually-hidden">&nbsp; user profile</span></a> replied 3
+                          <a href="#" id="user-profile-6" aria-labelledby="user-profile user-profile-6">@rapper</a> replied 3
                           hours ago &nbsp;
                           <span class="tag">Question</span>
                         </p>
@@ -1014,10 +1005,10 @@
               <label class="label" for="username">Username</label>
               <div class="control has-icons-left has-icons-right">
                 <input id="username" class="input is-success" type="text">
-                <span class="icon is-small is-left">
+                <span class="icon is-small is-left" aria-hidden="true">
                   <i class="fas fa-user"></i>
                 </span>
-                <span class="icon is-small is-right">
+                <span class="icon is-small is-right" aria-hidden="true">
                   <i class="fas fa-check"></i>
                 </span>
               </div>
@@ -1028,10 +1019,10 @@
               <label for="email" class="label">Email</label>
               <div class="control has-icons-left has-icons-right">
                 <input id="email" class="input is-danger" type="email" placeholder="Email input" value="hello@">
-                <span class="icon is-small is-left">
+                <span class="icon is-small is-left" aria-hidden="true">
                   <i class="fas fa-envelope"></i>
                 </span>
-                <span class="icon is-small is-right">
+                <span class="icon is-small is-right" aria-hidden="true">
                   <i class="fas fa-exclamation-triangle"></i>
                 </span>
               </div>
@@ -1093,6 +1084,8 @@
           </form>
         </div>
       </section>
+      <span class="visually-hidden" id="link-new-tab" aria-hidden="true">Link will open in a new tab</span>
+
     </main>
 
     <!-- <div class="section">
@@ -1246,10 +1239,10 @@
 
         <div class="content has-text-centered">
           <div class="soc">
-            <a href="#"><i class="fab fa-github-alt fa-2x"></i><span class="visually-hidden">Github page</span></a>
-            <a href="#"><i class="fab fa-youtube fa-2x"></i><span class="visually-hidden">Youtube channel</span></a>
-            <a href="#"><i class="fab fa-facebook fa-2x"></i><span class="visually-hidden">Facebook group</span></a>
-            <a href="#"><i class="fab fa-twitter fa-2x"></i><span class="visually-hidden">Twitter</span></a>
+            <a href="#" aria-label="Github page"><i aria-hidden="true" class="fab fa-github-alt fa-2x"></i></a>
+            <a href="#" aria-label="Youtube channel"><i aria-hidden="true" class="fab fa-youtube fa-2x"></i></a>
+            <a href="#" aria-label="Facebook group"><i aria-hidden="true" class="fab fa-facebook fa-2x"></i></a>
+            <a href="#" aria-label="Twitter"><i aria-hidden="true" class="fab fa-twitter fa-2x"></i></a>
           </div>
           <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
         </div>
@@ -1298,7 +1291,7 @@
           </div>
         </div>
       </div>
-      <button class="modal-close is-large"><span class="visually-hidden">Close modal</span></button>
+      <button class="modal-close is-large" aria-label="close modal"></button>
     </div>
 
     <div id="modal-image1" class="modal modal-fx-3dSlit">
@@ -1306,7 +1299,7 @@
       <div class="modal-content is-huge is-image">
         <img src="https://source.unsplash.com/random/?sig=1" alt="some random photo in modal window">
       </div>
-      <button class="modal-close is-large"><span class="visually-hidden">Close modal</span></button>
+      <button class="modal-close is-large" aria-label="close modal"></button>
     </div>
 
     <div id="modal-image2" class="modal modal-fx-superScaled">
@@ -1314,9 +1307,8 @@
       <div class="modal-content  is-image">
         <img src="https://source.unsplash.com/random/?sig=3" alt="another random photo in modal window">
       </div>
-      <button class="modal-close is-large"><span class="visually-hidden">Close modal</span></button>
+      <button class="modal-close is-large" aria-label="close modal"></button>
     </div>
-
     <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
     <script async src="js/custom.js"></script>
   </body>
