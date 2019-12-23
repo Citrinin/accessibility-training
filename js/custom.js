@@ -1,10 +1,15 @@
 (function() {
   var burger = document.querySelector(".burger");
   var menu = document.querySelector("#" + burger.dataset.target);
-  burger.addEventListener("click", function() {
-    burger.classList.toggle("is-active");
-    menu.classList.toggle("is-active");
-  });
+  burger.addEventListener("click", burgerToggler);
+  burger.addEventListener("keydown", burgerToggler);
+
+  function burgerToggler(event) {
+    if (event.type === "click" || event.key === "Enter") {
+      burger.classList.toggle("is-active");
+      menu.classList.toggle("is-active");
+    }
+  }
 })();
 
 document.querySelectorAll("#nav li").forEach(function(navEl) {

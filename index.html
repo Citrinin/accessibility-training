@@ -17,8 +17,8 @@
           <div class="dropdown-trigger">
             <button class="button skip-link" aria-haspopup="true" aria-controls="dropdown-menu3">
               <span>Skip navigation link</span>
-              <span class="icon is-small">
-                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              <span class="icon is-small" aria-hidden="true">
+                <i class="fas fa-angle-down"></i>
               </span>
             </button>
           </div>
@@ -90,7 +90,7 @@
               <a class="navbar-item logo-link " href="#">
                 <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" alt="epam logo">
               </a>
-              <span class="navbar-burger burger" data-target="navbarMenu">
+              <span tabindex="0" class="navbar-burger burger" data-target="navbarMenu" aria-haspopup="true" aria-label="Main menu" aria-owns="navbarMenu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -101,7 +101,7 @@
               <ul class="navbar-end">
                 <li class="navbar-item">
                   <a class="has-text-white" href="#">
-                    <span class="icon">
+                    <span class="icon" aria-hidden="true">
                       <i class="fa fa-home"></i>
                     </span>
                     <span>Home</span>

@@ -131,7 +131,7 @@
 
 @media screen and (max-width: 1087px) {
   .navbar-menu {
-    background-color: #888;
+    background-color: #757575;
   }
 }
 
@@ -166,7 +166,7 @@ ol {
 }
 
 .ol-list li span::before {
-  content: '';
+  content: "";
   background: url(../img/arrow_sans_right-512.png) no-repeat;
   display: inline-block;
   text-align: center;
@@ -299,4 +299,12 @@ a[target='_blank']::after {
 
 fieldset {
   border: none;
+}
+
+a {
+  text-decoration: underline;
+}
+
+.navbar-burger {
+  color: #fff;
 }
