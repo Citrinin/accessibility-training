@@ -306,6 +306,7 @@ a {
   text-decoration: underline;
 }
 
-.navbar-burger {
+.navbar-burger,
+.timer {
   color: #fff;
 }
