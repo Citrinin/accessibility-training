@@ -44,3 +44,11 @@ dropdown.addEventListener('click', function(event) {
   event.stopPropagation();
   dropdown.classList.toggle('is-active');
 });
+
+(function() {
+  var liveElement = document.querySelector('#live-region');
+  liveElement.innerHTML = new Date().toLocaleTimeString();
+  setInterval(() => {
+    liveElement.innerHTML = new Date().toLocaleTimeString();
+  }, 60000);
+})();
