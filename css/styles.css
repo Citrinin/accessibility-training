@@ -130,8 +130,9 @@
 }
 
 @media screen and (max-width: 1087px) {
-  .navbar-menu {
-    background-color: #888;
+  .navbar-menu,
+  .navbar-burger {
+    background-color: #585858;
   }
 }
 
@@ -299,4 +300,13 @@ a[target='_blank']::after {
 
 fieldset {
   border: none;
+}
+
+a {
+  text-decoration: underline;
+}
+
+.navbar-burger,
+.timer {
+  color: #fff;
 }
