@@ -137,11 +137,11 @@
         </div>
       </header>
 
-      <div class="hero-body" id="hero-block">
+      <div class="hero-body" id="hero-block" aria-labelledby="hero-heading" aria-describedby="hero-subtitle">
         <div class="container has-text-centered">
           <div class="column is-6 is-offset-3">
-            <h1 class="title has-text-white">We have web accessibility in mind</h1>
-            <div class="subtitle has-text-white">
+            <h1 class="title has-text-white" id="hero-title">We have web accessibility in mind</h1>
+            <div class="subtitle has-text-white" id="hero-subtitle">
               Would you like to get the latest news?
             </div>
             <form class="box">
@@ -160,9 +160,9 @@
     </section>
 
     <main id="main">
-      <section class="section" id="about">
+      <section class="section" id="about" aria-labelledby="about-heading" tabindex="0">
         <div class="section-heading has-text-centered">
-          <h2 class="title is-2">About Us</h2>
+          <h2 class="title is-2" id="about-heading">About Us</h2>
           <div class="subtitle is-5">We of all trades, master of "some"</div>
           <div class="container">
             <p>Web developers with more than <b>4 years</b> of well-rounded experience with a degree in the
@@ -293,7 +293,7 @@
       <section class="hero has-background-grey-light" id="key-features">
         <div class="container features">
           <div class="section-heading has-text-centered">
-            <h2 class="title is-2">Three key features</h2>
+            <h2 class="title is-2" id="key-features-heading">Three key features</h2>
             <div class="subtitle is-5">We don't hide what we do</div>
           </div>
 
@@ -354,11 +354,11 @@
         </div>
       </section>
 
-      <section id="topics">
+      <section id="topics" aria-labelledby="topics-heading">
         <div class="hero is-info">
           <div class="hero-body">
             <div class="container">
-              <h2 class="title">List of topics</h2>
+              <h2 class="title" id="topics-heading">List of topics</h2>
               <div class="subtitle">We are always in touch we the outside world</div>
             </div>
           </div>
@@ -380,7 +380,7 @@
                 <button role="tab" aria-owns="pane-4" aria-controls="pane-4" aria-selected="false">
                   <span class="icon is-small" aria-hidden="true"><i class="fa fa-film"></i></span>
                   <span>Video</span>
-                  </but>
+                  </button>
               </li>
             </ul>
           </div>
@@ -530,10 +530,10 @@
         </div>
       </section>
 
-      <section class="section has-background-grey-lighter" id="events">
+      <section class="section has-background-grey-lighter" id="events" aria-labelledby="events-heading">
         <div class="container has-text-centered">
           <div class="section-heading has-text-centered">
-            <h2 class="title is-2">Upcoming events</h2>
+            <h2 class="title is-2" id="events-heading">Upcoming events</h2>
             <div class="subtitle is-5">Outcoming dates for the best options</div>
           </div>
 
@@ -555,7 +555,7 @@
                 </div>
                 <h3 class="title">Los Angeles</h3>
                 <p class="subtitle">Fri 27 Nov 2016</p>
-                <button class="button">Buy Tickets</b>
+                <button class="button">Buy Tickets</button>
               </div>
             </div>
             <div class="tile is-parent">
@@ -589,7 +589,7 @@
                 </div>
                 <h3 class="title">Minsk</h3>
                 <p class="subtitle">Fri 27 Nov 2016</p>
-                <button class="button">Buy Tickets</butt>
+                <button class="button">Buy Tickets</button>
               </div>
             </div>
             <div class="tile is-parent">
@@ -606,9 +606,9 @@
         </div>
       </section>
 
-      <section class="section" id="services">
+      <section class="section" id="services" aria-labelledby="services-heading">
         <div class="section-heading has-text-centered">
-          <h2 class="title is-2">Services</h2>
+          <h2 class="title is-2" id="services-heading">Services</h2>
           <div class="subtitle is-5">What can I do for you?</div>
         </div>
         <div class="container">
@@ -654,10 +654,10 @@
         </div>
       </section>
 
-      <section class="section has-background-grey-lighter" id="photos">
+      <section class="section has-background-grey-lighter" id="photos" aria-labelledby="photos-heading">
         <div class="container">
           <div class="section-heading has-text-centered">
-            <h2 class="title is-2">Photos from past events</h2>
+            <h2 class="title is-2" id="photos-heading">Photos from past events</h2>
           </div>
           <span class="visually-hidden" aria-hidden="true" id="photos-version">photos version:</span>
           <div class="container portfolio-container">
@@ -819,10 +819,10 @@
         </div>
       </section>
 
-      <section class="section" id="forum">
+      <section class="section" id="forum" aria-labelledby="forum-heading">
         <div class="container">
           <div class="section-heading has-text-centered">
-            <h2 class="title is-2">Forum</h2>
+            <h2 class="title is-2" id="forum-heading">Forum</h2>
             <div class="subtitle is-5">Discuss any topic with no leaving this page</div>
           </div>
           <span class="visually-hidden" aria-hidden="true" id="user-profile">user profile</span>
@@ -986,10 +986,10 @@
         </div>
       </section>
 
-      <section class="section has-background-light" id="contacts">
+      <section class="section has-background-light" id="contacts" aria-labelledby="contacts-heading">
         <div class="container">
           <div class="section-heading has-text-centered">
-            <h2 class="title is-2">Contact us</h2>
+            <h2 class="title is-2" id="contacts-heading">Contact us</h2>
             <div class="subtitle is-5">Don't hesitate, ask anything</div>
           </div>
 
@@ -997,14 +997,14 @@
             <div class="field">
               <label class="label" for="name">Name</label>
               <div class="control">
-                <input id="name" class="input" type="text" placeholder="Text input">
+                <input id="name" class="input" type="text" placeholder="enter your name">
               </div>
             </div>
 
             <div class="field">
               <label class="label" for="username">Username</label>
               <div class="control has-icons-left has-icons-right">
-                <input id="username" class="input is-success" type="text">
+                <input id="username" class="input is-success" type="text" placeholder="enter your username">
                 <span class="icon is-small is-left" aria-hidden="true">
                   <i class="fas fa-user"></i>
                 </span>
@@ -1018,7 +1018,7 @@
             <div class="field">
               <label for="email" class="label">Email</label>
               <div class="control has-icons-left has-icons-right">
-                <input id="email" class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                <input id="email" class="input is-danger" type="email" placeholder="Email" value="hello@" aria-invalid="true">
                 <span class="icon is-small is-left" aria-hidden="true">
                   <i class="fas fa-envelope"></i>
                 </span>
@@ -1057,7 +1057,7 @@
               </div>
             </div>
 
-            <div class="field">
+            <div class="field" role="radiogroup">
               <div class="control">
                 <fieldset>
                   <legend>I am front end developer</legend>
@@ -1197,8 +1197,8 @@
     </div>
   </div> -->
 
-    <footer class="footer" id="footer">
-      <h2 class="visually-hidden">Footer</h2>
+    <footer class="footer" id="footer" aria-labelledby="footer-heading">
+      <h2 class="visually-hidden" id="footer-heading">Footer</h2>
       <div class="container">
         <div class="columns">
           <div class="column is-3 is-offset-2">
@@ -1249,7 +1249,7 @@
       </div>
     </footer>
 
-    <div id="modal-card" class="modal modal-fx-3dSlit" role="dialog">
+    <div id="modal-card" class="modal modal-fx-3dSlit" role="dialog" aria-modal="true" aria-label="Jane Doe's best photo">
       <div class="modal-background"></div>
       <div class="modal-content is-tiny">
         <div class="card">
@@ -1294,7 +1294,7 @@
       <button class="modal-close is-large" aria-label="close modal"></button>
     </div>
 
-    <div id="modal-image1" class="modal modal-fx-3dSlit" role="dialog">
+    <div id="modal-image1" class="modal modal-fx-3dSlit" role="dialog" aria-modal="true" aria-label="some random photo in modal window" >
       <div class="modal-background"></div>
       <div class="modal-content is-huge is-image">
         <img src="https://source.unsplash.com/random/?sig=1" alt="some random photo in modal window">
@@ -1302,9 +1302,9 @@
       <button class="modal-close is-large" aria-label="close modal"></button>
     </div>
 
-    <div id="modal-image2" class="modal modal-fx-superScaled" role="dialog">
+    <div id="modal-image2" class="modal modal-fx-superScaled" role="dialog" aria-modal="true" aria-label="another random photo in modal window" >
       <div class="modal-background"></div>
-      <div class="modal-content  is-image">
+      <div class="modal-content is-image">
         <img src="https://source.unsplash.com/random/?sig=3" alt="another random photo in modal window">
       </div>
       <button class="modal-close is-large" aria-label="close modal"></button>
