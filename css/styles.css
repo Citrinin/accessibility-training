@@ -130,7 +130,8 @@
 }
 
 @media screen and (max-width: 1087px) {
-  .navbar-menu {
+  .navbar-menu,
+  .navbar-burger {
     background-color: #585858;
   }
 }
@@ -166,7 +167,7 @@ ol {
 }
 
 .ol-list li span::before {
-  content: "";
+  content: '';
   background: url(../img/arrow_sans_right-512.png) no-repeat;
   display: inline-block;
   text-align: center;
